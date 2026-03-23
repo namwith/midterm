@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop Dell XPS 13",
+    "category": "Laptop",
+    "price": 2500,
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=300",
+    "stock": 3
+  },
+  {
+    "id": 2,
+    "name": "iPhone 14",
+    "category": "Phone",
+    "price": 1200,
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300",
+    "stock": 5
+  },
+  {
+    "id": 3,
+    "name": "Samsung Galaxy S23",
+    "category": "Phone",
+    "price": 1100,
+    "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=300",
+    "stock": 7
+  },
+  {
+    "id": 4,
+    "name": "MacBook Pro",
+    "category": "Laptop",
+    "price": 3000,
+    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=300",
+    "stock": 3
+  },
+  {
+    "id": 5,
+    "name": "aaa",
+    "category": "Laptop",
+    "price": 222222222222222,
+    "image": "https://tse4.mm.bing.net/th/id/OIP.mZnyxMDtNDj0TbsS0IGrXwHaD4?w=343&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+    "stock": 1000
+  },
+  {
+    "id": 6,
+    "name": "Apple iPhone 17",
+    "category": "Phone",
+    "price": 12345,
+    "image": "data:image/webp;base64,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",
+    "stock": 1000
+  },
+  {
+    "id": 7,
+    "name": "iphone se",
+    "category": "Phone",
+    "price": 9999,
+    "image": "https://tse3.mm.bing.net/th/id/OIP.2S-H_IwYyXHf-FNPz6h6vwHaGU?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "stock": 100
+  },
+  {
+    "id": 8,
+    "name": " Apple iPhone 14 128GB",
+    "category": "Phone",
+    "price": 45555,
+    "image": "https://tse2.mm.bing.net/th/id/OIP.9vKoNNCzO6k5cBD4gL4r7AHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "stock": 111
+  }
+]

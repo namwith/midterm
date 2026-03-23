@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1774248398457,
+    "date": "2026-03-23T06:46:38.457Z",
+    "items": [
+      {
+        "id": 2,
+        "name": "iPhone 14",
+        "category": "Phone",
+        "price": 1200,
+        "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300",
+        "stock": 10,
+        "quantity": 1
+      }
+    ],
+    "total": 1200
+  },
+  {
+    "id": 1774249447122,
+    "date": "2026-03-23T07:04:07.122Z",
+    "items": [
+      {
+        "id": 2,
+        "name": "iPhone 14",
+        "category": "Phone",
+        "price": 1200,
+        "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300",
+        "stock": 9,
+        "quantity": 1
+      }
+    ],
+    "total": 1200
+  },
+  {
+    "id": 1774249971663,
+    "date": "2026-03-23T07:12:51.663Z",
+    "items": [
+      {
+        "id": 1,
+        "name": "Laptop Dell XPS 13",
+        "category": "Laptop",
+        "price": 2500,
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=300",
+        "stock": 5,
+        "quantity": 1
+      }
+    ],
+    "total": 2500
+  },
+  {
+    "id": 1774250376702,
+    "date": "2026-03-23T07:19:36.702Z",
+    "items": [
+      {
+        "id": 2,
+        "name": "iPhone 14",
+        "category": "Phone",
+        "price": 1200,
+        "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300",
+        "stock": 8,
+        "quantity": 1
+      }
+    ],
+    "total": 1200
+  },
+  {
+    "id": 1774250489913,
+    "date": "2026-03-23T07:21:29.913Z",
+    "items": [
+      {
+        "id": 2,
+        "name": "iPhone 14",
+        "category": "Phone",
+        "price": 1200,
+        "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300",
+        "stock": 7,
+        "quantity": 1
+      }
+    ],
+    "total": 1200
+  },
+  {
+    "id": 1774251571793,
+    "date": "2026-03-23T07:39:31.793Z",
+    "items": [
+      {
+        "id": 2,
+        "name": "iPhone 14",
+        "category": "Phone",
+        "price": 1200,
+        "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300",
+        "stock": 6,
+        "quantity": 1
+      },
+      {
+        "id": 3,
+        "name": "Samsung Galaxy S23",
+        "category": "Phone",
+        "price": 1100,
+        "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=300",
+        "stock": 8,
+        "quantity": 1
+      },
+      {
+        "id": 1,
+        "name": "Laptop Dell XPS 13",
+        "category": "Laptop",
+        "price": 2500,
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=300",
+        "stock": 4,
+        "quantity": 1
+      }
+    ],
+    "total": 4800
+  }
+]

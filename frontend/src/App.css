@@ -1,0 +1,375 @@
+/* ============================================================
+   ĐẠI TU GIAO DIỆN: CHỦ ĐẠO MÀU CAM - HIỆN ĐẠI & RÕ RÀNG
+============================================================ */
+
+:root {
+  /* Bảng màu chính mới */
+  --bg-color: #f4f6f8;
+  /* Nền trắng xám nhạt cực sạch */
+  --card-bg: #ffffff;
+  /* Nền thẻ trắng tinh khôi */
+
+  --primary-orange: #FF7F00;
+  /* Màu Cam chủ đạo (Vivid Orange) */
+  --orange-hover: #E66A00;
+  /* Màu Cam khi hover đậm hơn */
+  --orange-light: #FFF3E0;
+  /* Màu Cam cực nhạt cho highlight */
+
+  --text-main: #2c3e50;
+  /* Văn bản chính màu xanh đen đậm (Sửa lỗi chữ mờ) */
+  --text-sub: #7f8c8d;
+  /* Văn bản phụ màu xám */
+  --border-color: #e1e8ed;
+  /* Màu viền nhẹ nhàng */
+
+  --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50 !important;
+  font-weight: 700;
+}
+
+/* 1. THANH NAVIGATION (NAVBAR) - Gọn gàng & Chuyên nghiệp */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--card-bg);
+  padding: 15px 40px;
+  box-shadow: var(--shadow-light);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-brand {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--primary-orange);
+  /* Logo màu cam */
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-links a:hover {
+  color: var(--primary-orange);
+}
+
+/* Nút Admin đặc biệt */
+.btn-nav-admin {
+  background-color: var(--orange-light);
+  color: var(--primary-orange) !important;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+.btn-nav-admin:hover {
+  background-color: #ffe0b2;
+}
+
+/* 2. CẤU TRÚC GRID SẢN PHẨM - Sửa lỗi bố cục (Hình 3 & 4) */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  /* Grid tự thích ứng xịn */
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.product-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: var(--shadow-light);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  /* Giữ nguyên tỷ lệ ảnh sản phẩm */
+  margin-bottom: 15px;
+  background: #fff;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: var(--text-main);
+}
+
+.product-card .price {
+  color: var(--primary-orange);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.product-card .stock {
+  color: var(--text-sub);
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* 3. CÁC LOẠI NÚT (BUTTONS) - Thống nhất màu Cam */
+button {
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Nút chính (Màu Cam) */
+.btn-orange-solid {
+  background-color: var(--primary-orange);
+  color: white;
+  padding: 12px 20px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.btn-orange-solid:hover {
+  background-color: var(--orange-hover);
+}
+
+.btn-orange-solid:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Nút phụ (Màu Cam nhạt) */
+.btn-orange-light {
+  background-color: var(--orange-light);
+  color: var(--primary-orange);
+  padding: 8px 15px;
+}
+
+.btn-orange-light:hover {
+  background-color: #ffe0b2;
+}
+
+/* Nút xóa (Màu Xám đậm - tinh tế hơn màu đỏ gay gắt) */
+.btn-action-delete {
+  background-color: #e0e0e0;
+  color: #555;
+  padding: 8px 15px;
+}
+
+.btn-action-delete:hover {
+  background-color: #d5d5d5;
+  color: #333;
+}
+
+/* 4. GIAO DIỆN ADMIN 2 CỘT & FORM - Gọn gàng */
+.admin-layout {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 40px;
+  align-items: start;
+  margin-top: 30px;
+}
+
+.admin-sidebar {
+  position: sticky;
+  top: 100px;
+}
+
+.product-form {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product-form input {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: #fbfbfb;
+  color: var(--text-main);
+  /* Sửa lỗi chữ mờ trong input */
+}
+
+.product-form input:focus {
+  outline: none;
+  border-color: var(--primary-orange);
+  box-shadow: 0 0 0 2px rgba(255, 127, 0, 0.1);
+}
+
+/* 5. GIAO DIỆN GIỎ HÀNG (CART) - Sửa lỗi Hình 5 */
+.cart-page {
+  margin-top: 40px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-light);
+  border: 1px solid var(--border-color);
+}
+
+.cart-item img {
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.item-details h4 {
+  margin: 0 0 5px 0;
+  color: var(--text-main);
+}
+
+.item-details p {
+  margin: 0;
+  color: var(--text-sub);
+}
+
+.item-total {
+  text-align: right;
+}
+
+.item-total strong {
+  color: var(--primary-orange);
+  font-size: 18px;
+}
+
+.cart-summary {
+  margin-top: 30px;
+  padding: 30px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  text-align: right;
+  box-shadow: var(--shadow-md);
+  border-top: 4px solid var(--primary-orange);
+  color: #2c3e50 !important;
+  margin-top: 0;
+}
+
+/* 6. MODAL ĐĂNG NHẬP ADMIN - Sửa lỗi Hình 2 */
+.login-container {
+  max-width: 400px;
+  margin: 150px auto;
+  background: var(--card-bg);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+
+.login-container h2 {
+  margin-top: 0;
+  color: var(--primary-orange);
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+}
+
+/* =====================================
+   7. MODAL CHI TIẾT SẢN PHẨM
+===================================== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Nền đen mờ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.2s ease-out;
+}
+
+.modal-content p {
+  margin: 12px 0;
+  font-size: 16px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
